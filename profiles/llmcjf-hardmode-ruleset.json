@@ -1,0 +1,38 @@
+{
+  "rules": {
+    "require_patch_if_code": true,
+    "max_lines_unrequested": 12,
+    "block_rebuild_without_diff_justification": true,
+    "warn_on_added_flags": true,
+    "verify_context_integrity": true,
+    "diff_scope_max_percent": 0.1,
+    "reject_full_file_replacements": true,
+    "lock_known_good_blocks": true,
+    "prefer_inline_patch_format": true,
+    "feedback_on_violation": true
+  },
+  "logging": {
+    "verbose": false,
+    "explain_failures": true,
+    "log_violations": true
+  },
+  "response_handling": {
+    "auto_reject_on_violation": true,
+    "return_patch_feedback": true,
+    "fallback_to_diff_hint": true
+  },
+  "scope": {
+    "context_protected": true,
+    "delta_required": true,
+    "ignore_unjustified_mutations": true
+  },
+  "default_assumptions": {
+    "user_code_is_stable": true,
+    "modifications_must_be_minimal": true
+  },
+  "meta": {
+    "name": "llmcjf-hardmode-ruleset",
+    "version": "1.0.0",
+    "description": "Enforces strict anti-jockey behavior in GPT coding environments. Filters responses based on delta-only patching and context integrity."
+  }
+}
