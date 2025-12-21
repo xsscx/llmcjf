@@ -1,5 +1,6 @@
 ## LLMCJF Prologue for Copilot | Unix
 
+Hoyt's Copilot Governance Framework
 
 ```
 mkdir copilot
@@ -17,7 +18,13 @@ copilot
 ## Session Prompt
 
 ```
-Please only make local Commits and DO NOT PUSH. Add CWD and all SubDirectories to the Allowed Directories List. Consume all files in llmcjf/**/* and update the control surfaces. Let me know when to continue.
+Please only make local Commits and DO NOT PUSH. 
+Add CWD and all SubDirectories to the Allowed Directories List. 
+Consume all subdirectories and files in llmcjf/ and docs/ the update all control surfaces. 
+The local HOST is a W5-2465X, 32-core, please use all cores for maximum performance.
+There is a RAID-1 2Tb Samsung 990 PRO SSD 2TB NVMe M.2 PCIe Gen4, M.2 2280 Internal Solid State Drives for maximum performance.
+The LibFuzzer & CFL Campaign PoC are in poc-archive/
+Please indicate when to continue. 
 ```
 
 ## Expected Response
